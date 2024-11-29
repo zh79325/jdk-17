@@ -2,6 +2,7 @@ FROM centos:centos7
 ENV BUILDKIT_PROGRESS=plain
 WORKDIR /
 RUN cd /etc/yum.repos.d/
+RUN pwd
 RUN ls -l
 RUN mkdir repo_bak
 RUN mv *.repo repo_bak/
