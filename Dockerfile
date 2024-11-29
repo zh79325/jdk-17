@@ -1,4 +1,4 @@
-FROM centos:centos7
+FROM public.ecr.aws/propeller/centos7-base:latest
 ENV BUILDKIT_PROGRESS=plain
 WORKDIR /
 RUN ls -l /etc/yum.repos.d
