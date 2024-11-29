@@ -2,8 +2,9 @@ FROM centos:centos7
 ENV BUILDKIT_PROGRESS=plain
 WORKDIR /
 RUN cd /etc/yum.repos.d/
-RUN mv *.repo repo_bak/
+RUN ls -l
 RUN mkdir repo_bak
+RUN mv *.repo repo_bak/
 COPY Centos-7.repo etc/yum.repos.d/
 COPY CentOS7-Base-163.repo etc/yum.repos.d/
 RUN ls -l
