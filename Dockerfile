@@ -1,6 +1,9 @@
 FROM centos:centos7
 ENV BUILDKIT_PROGRESS=plain
 WORKDIR /
+RUN cd /etc
+RUN pwd
+RUN ls -l
 RUN cd /etc/yum.repos.d/
 RUN pwd
 RUN ls -l
