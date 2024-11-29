@@ -1,2 +1,2 @@
-# landing-ai
-landing-ai阿里云加速
+# jdk17
+jdk17 阿里云加速镜像
