@@ -4,6 +4,9 @@ WORKDIR /
 RUN cd /etc
 RUN pwd
 RUN ls -l
+RUN mkdir yum.repos.d
+RUN pwd
+RUN ls -l
 RUN cd /etc/yum.repos.d/
 RUN pwd
 RUN ls -l
